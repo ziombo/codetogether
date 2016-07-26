@@ -1,9 +1,6 @@
-﻿using System;
-using System.Web;
-using Microsoft.AspNet.SignalR;
+﻿using Microsoft.AspNet.SignalR;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace SignalRChat
 {
@@ -35,9 +32,7 @@ namespace SignalRChat
 		{
 			rooms[groupName] -= 1;
 		}
-
-
-		//redirect to default page if group is full
+		//show alert modal if group is full
 		public Task Redirect()
 		{
 			return Clients.Caller.redirecting();
@@ -53,11 +48,6 @@ namespace SignalRChat
 			return Groups.Add(Context.ConnectionId, groupName);	
 		}
 
-
-		/*public Task JoinGroup(string groupName)
-		{	
-			return Groups.Add(Context.ConnectionId, groupName);
-		}*/
 
 		public void Send(string groupName, string name, string message)
 		{	
