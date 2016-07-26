@@ -1,0 +1,56 @@
+﻿html{
+	height: 100%;
+	width: 100%;
+	background: #2980B9;
+}
+html *{
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	text-align: center;
+	margin-bottom: 150px;
+}
+header img{
+	max-width: 100%;
+}
+#pageContent{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+#roomForm *{
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 350px;
+	font-size: 25px;
+	padding: 10px 5px;
+}
+#txtJoin{
+	visibility: hidden;
+}
+.roomBtns{
+    background: #E74C3C;
+    color: #ECF0F1;
+    border: 4px outset #a03429;
+	outline: none;
+	cursor: pointer;
+}
+.roomBtns:nth-of-type(3){
+	margin-top: 3px !important;
+}
+.roomBtns:hover{
+	background: #e26052;
+}
+.roomBtns:active{
+	border: 4px inset #a03429;
+}
+.show-zoom{
+	-webkit-animation:animatezoom 0.6s;
+	animation:animatezoom 0.6s
+
+}
+
+@-webkit-keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
