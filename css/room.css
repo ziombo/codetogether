@@ -91,6 +91,7 @@
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
+	background:  #F4F4F4;
 }
 #chat *{
 		font-family: 'Poppins', sans-serif;
@@ -214,7 +215,7 @@
 	top: 70px;
 	left: 0;
 	bottom: 100px;
-	border: 1px solid black;
+	border: 0;
 	border-bottom: 0;
 	resize: none;
 	outline: none;
@@ -222,14 +223,13 @@
 #msgText{
 	font-size: 25px;
 	width: 100%;
-	background: #efefef;
+	background: #F4F4F4;
 	position: absolute;
 	left: 0;
 	bottom: 60px;
 	padding: 5px 2px;
 	border: 0;
 	border-top: 1px solid black;
-
 }
 #sendMsg{
 	height:55px;
