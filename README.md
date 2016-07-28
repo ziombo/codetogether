@@ -1,5 +1,6 @@
 # CodeTogether
 CodeTogether is a website that allows people to pair programme in real time.
+Live version available: [CodeTogether](http://codetogether.apphb.com/)
 
 # Built With:
 1. C#
